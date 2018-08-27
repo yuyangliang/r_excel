@@ -18,7 +18,7 @@ from sklearn.model_selection import cross_validate
 from sklearn.tree import export_graphviz
 from sklearn import metrics
 
-alldat = pd.read_csv('data/prediction_data_7.csv')
+alldat = pd.read_csv('data/prediction_data.csv')
 labels = np.array(alldat.unsolved)
 alldat = alldat.drop(['unsolved'], axis = 1)
 feature_names = list(alldat.columns)
